@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./index.css" />
+    <title>FoodBox</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <main class="pt-3">
+        <header class="mb-5">
+          <div class="container-fluid px-sm-4 px-lg-5">
+            <div class="row">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center"
+              >
+                <div class="navbar--brand d-flex gap-2 align-items-center">
+                  <div class="brand-logo">
+                    <img src="./images/Frame 1.png" alt="brand logo" />
+                  </div>
+                  <div class="brand-name mt-2">
+                    <h4 class="fw-semibold">Food<span>Box</span></h4>
+                  </div>
+                </div>
+                <!-- navbar -->
+                <div
+                  class="navbar--navlists d-none d-lg-flex justify-content-center align-items-center"
+                >
+                  <ul class="nav gap-5">
+                    <li>
+                      <a class="active" href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Menu</a>
+                    </li>
+                    <li>
+                      <a href="#">Service</a>
+                    </li>
+                    <li>
+                      <a href="#">Delivery</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- cart and search -->
+                <div
+                  class="navbar--cart-search-container d-sm-flex gap-2 align-items-center d-none"
+                >
+                  <div class="search-icon">
+                    <img src="./images/search-icon.png" alt="search icon" />
+                  </div>
+                  <div class="cart-icon">
+                    <img src="./images/cart-icon.png" alt="cart-icon icon" />
+                  </div>
+                </div>
+                <!-- hamburger -->
+                <div class="navbar--hamburger-menu d-sm-none">
+                  <img
+                    src="./images/icon-container.png"
+                    alt="hamburger menu icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="hero my-4">
+          <div class="container-fluid px-sm-4 px-lg-5">
+            <div class="row">
+              <div class="col-12 col-lg-6 order-lg-1 d-lg-grid">
+                <div class="hero--img-container">
+                  <img
+                    src="./images/hero-image.png"
+                    alt="hero image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="btn hero-btn rounded-pill mb-3 py-3 px-4 fw-semibold"
+                >
+                  Feast Your Senses
+                </div>
+                <h1 class="hero-title fw-bolder">
+                  Bon Appetit: <br />
+                  <span class="pry-color">Explore Culinary</span> <br />
+                  Creations
+                </h1>
+
+                <p class="hero-subtitle">
+                  Your ultimate destination for all things food! Explore our
+                  extensive collection of mouthwatering recipes.
+                </p>
+
+                <div class="btns d-sm-flex gap-sm-5">
+                  <!-- btn-1 -->
+                  <a href="#">
+                    <div
+                      class="btn order-btn rounded-pill mb-3 py-3 px-4 fw-bold text-uppercase d-flex justify-content-center align-items-center gap-3"
+                    >
+                      order now
+                      <img
+                        src="./images/arrow.png"
+                        alt="forward arrow"
+                        width="24"
+                      />
+                    </div>
+                  </a>
+                  <!-- btn 2 -->
+                  <a href="#">
+                    <div
+                      class="btn watch-btn rounded-pill mb-3 py-3 px-4 fw-bold text-uppercase d-flex justify-content-center align-items-center gap-3"
+                    >
+                      watch demo
+                      <img
+                        src="./images/Frame 3.png"
+                        alt="forward arrow"
+                        width="24"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <section class="category my-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="category--heading">Top Categories</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 category-cards mt-3 d-flex flex-wrap flex-column flex-sm-row gap-4 justify-content-center align-items-center"
+            >
+              <div class="category--card p-5 gap-5">
+                <div class="category--card--img">
+                  <img src="./images/pizza.png" alt="pizza img" />
+                </div>
+                <h4 class="category-type">Fast Food</h4>
+              </div>
+              <div class="category--card p-5 gap-5 active-card">
+                <div class="category--card--img">
+                  <img src="./images/salad.png" alt="salad img" />
+                </div>
+                <h4 class="category-type">Salad</h4>
+              </div>
+              <div class="category--card p-5 gap-5">
+                <div class="category--card--img">
+                  <img src="./images/cocktail.png" alt="cocktail img" />
+                </div>
+                <h4 class="category-type">Cocktail</h4>
+              </div>
+              <div class="category--card p-5 gap-5">
+                <div class="category--card--img">
+                  <img src="./images/chinese.png" alt="chinese img" />
+                </div>
+                <h4 class="category-type">Chinese</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content my-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div
+            class="row d-lg-flex justify-content-lg-center align-items-lg-center"
+          >
+            <div class="col-12 col-lg-6 order-lg-1">
+              <div class="content--img-container d-flex justify-content-center">
+                <img
+                  src="./images/eating-man.png"
+                  alt="eating person img"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h3 class="content-heading text-capitalize">
+                Order your best food any Time
+              </h3>
+              <p class="content-desc py-3">
+                Whether you're a seasoned chef or a kitchen novice our user
+                friendly platform caters to all levels of expertise, ensuring
+                everyone can saver the joy of creating delicious meals
+              </p>
+
+              <div class="content-btn d-sm-flex">
+                <div
+                  class="btn order-btn rounded-pill mb-3 py-3 px-4 fw-bold text-uppercase d-flex justify-content-center align-items-center gap-3"
+                >
+                  order now
+                  <img
+                    src="./images/arrow.png"
+                    alt="forward arrow"
+                    width="24"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="process my-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <h1 class="process-heading text-capitalize fw-bold">
+                Our food Process
+              </h1>
+            </div>
+            <div
+              class="col-12 mt-3 d-flex flex-wrap flex-column flex-lg-row gap-lg-5 justify-content-center align-items-center progress-cards"
+            >
+              <div class="process-card mb-3">
+                <img src="./images/card-1.png" alt="card 1" />
+                <h1 class="process-card-heading my-4">Prepare</h1>
+                <p class="process-card-subtitle">
+                  Restaurant offer a variety of dining experiences.
+                </p>
+              </div>
+              <!-- card 2 -->
+              <div class="process-card mb-3">
+                <div class="process-card--img-container">
+                  <img src="./images/card-2.png" alt="card 2" />
+                  <div class="dash dash-left"></div>
+                  <div class="dash dash-right"></div>
+                </div>
+                <h1 class="process-card-heading my-4">Packing</h1>
+                <p class="process-card-subtitle">
+                  Catering companies specialize in providing food and beverages.
+                </p>
+              </div>
+              <!-- card 3 -->
+              <div class="process-card mb-3">
+                <img src="./images/card-3.png" alt="card 3" />
+                <h1 class="process-card-heading my-4">Deliver</h1>
+                <p class="process-card-subtitle">
+                  Meal delivery services deliver freshly prepared meals directly
+                  to customers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review my-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div class="row justify-content-lg-between align-items-center">
+            <div class="col-12 col-lg-5 mb-5">
+              <div class="review--img-container">
+                <img
+                  src="./images/left-column.png"
+                  alt="users"
+                  class="d-sm-none img-fluid w-100"
+                />
+                <img
+                  src="./images/pot.png"
+                  alt="users"
+                  class="d-none d-sm-block img-fluid pot"
+                />
+                <img
+                  src="./images/users-profile.png"
+                  alt=""
+                  class="d-none d-sm-block img-fluid users-profile"
+                />
+                <div class="rectangle"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 mt-4 mt-lg-0 d-flex flex-column py-3">
+              <h1 class="text-uppercase review-heading mb-lg-0">
+                customer reviews
+              </h1>
+              <p class="review-comment mt-3 mt-lg-2">
+                Overall, my visit to FoodBox exceeded all expectations. I highly
+                recommend it to anyone looking for an extraordinary culinary
+                adventure.
+              </p>
+              <div class="stars-icon my-2 mx-auto mx-sm-0">
+                <img src="./images/Stars.png" alt="stars icon" />
+              </div>
+              <div
+                class="user-details d-flex flex-column align-items-center gap-1 flex-sm-row align-items-sm-center gap-sm-3"
+              >
+                <div class="customer-image-container d-inline-block">
+                  <img src="./images/user.png" alt="customer 1" />
+                </div>
+                <div class="customer-info text-center text-sm-start pt-sm-2">
+                  <h2 class="user-name">Joey Brown</h2>
+                  <p class="text-uppercase user-nickname small-copy-text">
+                    food lover
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta my-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div class="row">
+            <div class="col-12 mt-5">
+              <div class="cta--card">
+                <div class="cta--card-img-container">
+                  <img
+                    src="./images/iPhone 13 Pro 1.png"
+                    alt="mobile img"
+                    class="d-sm-none"
+                  />
+                  <img
+                    src="./images/cta-sm.png"
+                    alt="mobile img"
+                    class="d-none d-sm-block d-lg-none cta-sm-img"
+                  />
+                  <img
+                    src="./images/cta-lg.png"
+                    alt="mobile img"
+                    class="img-lg d-none d-lg-block"
+                  />
+                </div>
+                <div class="cta--card-body">
+                  <h1 class="cta--card-body-heading">
+                    Download iOS & Android App
+                  </h1>
+                  <div
+                    class="cta--card-body-store-container mt-4 mt-sm-5 mt-lg-4 d-flex gap-3 justify-content-center"
+                  >
+                    <img src="./images/google-play.png" alt="google play" />
+                    <img src="./images/apple-store.png" alt="apple store" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="mt-5">
+        <div class="container-fluid px-sm-4 px-lg-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-6 pe-lg-4">
+              <div
+                class="footer--brand d-flex justify-content-center align-items-center gap-3 mb-4 justify-content-sm-start"
+              >
+                <div class="brand-logo">
+                  <img src="./images/Frame 1.png" alt="brand logo" />
+                </div>
+                <div class="brand-name mt-2">
+                  <h4 class="fw-semibold">Food<span>Box</span></h4>
+                </div>
+              </div>
+              <p class="body-copy">
+                Your ultimate destination for all things food! Explore our
+                extensive collection of mouthwatering recipies.
+              </p>
+            </div>
+            <div class="col-12 col-sm-11 col-md-10 col-lg-6 mt-5">
+              <div
+                class="footer--nav-container d-sm-flex justify-content-sm-between align-items-sm-center gap-3"
+              >
+                <div class="ft-navbar">
+                  <div
+                    class="footer-nav-type d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="mb-4 h4">Menu</h4>
+                    <img
+                      src="./images/arrow-down.png"
+                      alt=" arrow down"
+                      class="d-sm-none"
+                    />
+                  </div>
+                  <ul class="ps-0 text-black d-none d-sm-block">
+                    <li><a href="#" class="small-copy-text">About</a></li>
+                    <li><a href="#" class="small-copy-text">Menu</a></li>
+                    <li><a href="#" class="small-copy-text">Event</a></li>
+                    <li><a href="#" class="small-copy-text">Other</a></li>
+                  </ul>
+                </div>
+                <!-- nav 2 -->
+                <div class="ft-navbar">
+                  <div
+                    class="footer-nav-type d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="mb-4 h4">Information</h4>
+                    <img
+                      src="./images/arrow-down.png"
+                      alt=" arrow down"
+                      class="d-sm-none"
+                    />
+                  </div>
+                  <ul class="ps-0 text-black d-none d-sm-block">
+                    <li><a href="#" class="small-copy-text">Contact</a></li>
+                    <li>
+                      <a href="#" class="small-copy-text">Order & Returns</a>
+                    </li>
+                    <li><a href="#" class="small-copy-text">Videos</a></li>
+                    <li><a href="#" class="small-copy-text">Reservation</a></li>
+                  </ul>
+                </div>
+                <!-- nav 3 -->
+                <div class="ft-navbar">
+                  <div
+                    class="footer-nav-type d-flex justify-content-between align-items-center"
+                  >
+                    <h4 class="mb-4 h4">Address</h4>
+                    <img
+                      src="./images/arrow-down.png"
+                      alt=" arrow down"
+                      class="d-sm-none"
+                    />
+                  </div>
+                  <ul class="ps-0 text-black d-none d-sm-block">
+                    <li>
+                      <span class="small-copy-text text-black">
+                        1 2 3 4 Bay street,
+                      </span>
+                    </li>
+                    <li>
+                      <span class="small-copy-text text-black"
+                        >City name,231344</span
+                      >
+                    </li>
+                    <br />
+                    <li>
+                      <span class="small-copy-text text-black">
+                        9:00 AM - 12:00 PM
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div
+                class="socials-container d-flex justify-content-between justify-content-sm-center gap-sm-4 my-5"
+              >
+                <div class="circle">
+                  <a href="#">
+                    <img src="./images/tk.png" alt="tiktok icon" />
+                  </a>
+                </div>
+                <!-- circle 2 -->
+                <div class="circle">
+                  <a href="#">
+                    <img src="./images/fb.png" alt="fb icon" />
+                  </a>
+                </div>
+                <!-- circle 3 -->
+                <div class="circle">
+                  <a href="#">
+                    <img src="./images/ig.png" alt="ig icon" />
+                  </a>
+                </div>
+                <!-- circle 4 -->
+                <div class="circle">
+                  <a href="#">
+                    <img src="./images/x.png" alt="x icon" />
+                  </a>
+                </div>
+              </div>
+              <p class="small-copy-text text-black mt-5 text-center">
+                Copyright (c) 2024 sitename | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
