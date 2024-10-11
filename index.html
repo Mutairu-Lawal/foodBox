@@ -17,7 +17,7 @@
   <body>
     <div class="main-container">
       <main class="pt-3">
-        <header class="mb-5">
+        <header class="mb-5 fixed-top py-2">
           <div class="container-fluid px-sm-4 px-lg-5">
             <div class="row">
               <div
@@ -33,9 +33,9 @@
                 </div>
                 <!-- navbar -->
                 <div
-                  class="navbar--navlists d-none d-lg-flex justify-content-center align-items-center"
+                  class="navbar--navlists d-flex justify-content-center align-items-center"
                 >
-                  <ul class="nav gap-5">
+                  <ul class="nav gap-sm-3 gap-lg-5">
                     <li>
                       <a class="active" href="#">Home</a>
                     </li>
@@ -67,13 +67,21 @@
                   <img
                     src="./images/icon-container.png"
                     alt="hamburger menu icon"
+                    class="menu-icon open"
+                  />
+                  <img
+                    width="50"
+                    height="50"
+                    src="https://img.icons8.com/ios-glyphs/30/macos-close.png"
+                    alt="macos-close"
+                    class="menu-icon close"
                   />
                 </div>
               </div>
             </div>
           </div>
         </header>
-        <section class="hero my-4">
+        <section class="hero mt-lg-5 my-4">
           <div class="container-fluid px-sm-4 px-lg-5">
             <div class="row">
               <div class="col-12 col-lg-6 order-lg-1 d-lg-grid">
@@ -85,7 +93,7 @@
                   />
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-lg-6 mt-3">
                 <div
                   class="btn hero-btn rounded-pill mb-3 py-3 px-4 fw-semibold"
                 >
@@ -509,5 +517,14 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- js query cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- custom script -->
+    <script src="./main.js"></script>
   </body>
 </html>
