@@ -296,9 +296,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 50vh;
+    min-height: 40vh;
     display: block;
-    padding-top: 4em;
     background: var(--white);
     transform: translateX(-100%);
   }
