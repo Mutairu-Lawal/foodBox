@@ -122,6 +122,10 @@ header {
 
 /* hero section */
 
+.hero {
+  padding-top: 2em !important;
+}
+
 .hero-btn {
   background: var(--light-color);
   color: var(--pry-color);
@@ -271,6 +275,8 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+/* mobile screen and smaller */
 
 @media (max-width: 600px) {
   .close {
